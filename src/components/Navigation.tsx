@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 const navigation = [
   { name: 'Guides', href: '/guides' },
+  { name: 'Quick Ref', href: '/quickref' },
   { name: 'FAQ', href: '/faq' },
   { name: 'Products', href: '/products' },
   { name: 'Contact', href: '/contact' },
