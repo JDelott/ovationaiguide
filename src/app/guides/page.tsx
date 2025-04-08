@@ -14,23 +14,35 @@ const guides = [
     ]
   },
   {
-    category: "Core Concepts",
-    description: "Master the fundamentals of AI-assisted development.",
+    category: "Iterate/Build",
+    description: "Learn how to effectively use AI to build and expand your application.",
     number: "02",
     items: [
-      { title: "AI Assistant Basics", slug: "ai-basics", time: "15 min" },
-      { title: "Effective Prompting", slug: "prompting", time: "20 min" },
-      { title: "Code Generation", slug: "code-generation", time: "25 min" },
+      { title: "Adding Features with AI", slug: "build/features", time: "20 min" },
+      { title: "Building UI Components", slug: "build/components", time: "15 min" },
+      { title: "Creating Pages & Routes", slug: "build/routing", time: "15 min" },
+      { title: "Forms & API Integration", slug: "build/forms-api", time: "25 min" }
     ]
   },
   {
-    category: "Advanced Topics",
-    description: "Take your AI development skills to the next level.",
+    category: "Debug",
+    description: "Master the art of debugging with Cursor AI's intelligent assistance.",
     number: "03",
     items: [
-      { title: "Project Architecture", slug: "architecture", time: "30 min" },
-      { title: "Testing with Cursor", slug: "testing", time: "25 min" },
-      { title: "Debugging Tips", slug: "debugging", time: "20 min" },
+      { title: "Error Resolution with Cursor", slug: "debug/basics", time: "20 min" },
+      { title: "Understanding Error Messages", slug: "debug/errors", time: "15 min" },
+      { title: "AI-Assisted Bug Fixing", slug: "debug/ai-fixes", time: "20 min" },
+      { title: "Debugging Workflow", slug: "debug/workflow", time: "15 min" }
+    ]
+  },
+  {
+    category: "Version Control",
+    description: "Learn essential Git operations with Cursor AI's intelligent assistance.",
+    number: "04",
+    items: [
+      { title: "Git Repository Setup", slug: "git/setup", time: "10 min" },
+      { title: "AI Commit Messages", slug: "git/commits", time: "15 min" },
+      { title: "GitHub Integration", slug: "git/github", time: "20 min" }
     ]
   }
 ];
