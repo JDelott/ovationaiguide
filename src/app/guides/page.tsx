@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 const guides = [
   {
-    category: "Getting Started",
-    description: "Learn the basics of Cursor AI and set up your development environment.",
+    category: "Installation & Setup",
+    description: "Get your development environment ready with Cursor AI, Node.js, and create your first project.",
     number: "01",
     items: [
-      { title: "Installing Cursor AI", slug: "installation", time: "5 min" },
-      { title: "Basic Interface Overview", slug: "interface", time: "10 min" },
-      { title: "Key Shortcuts", slug: "shortcuts", time: "8 min" },
+      { title: "Development Prerequisites", slug: "installation", time: "10 min" },
+      { title: "Installing Cursor AI", slug: "installation/cursor", time: "5 min" },
+      { title: "Project Setup", slug: "installation/project-setup", time: "10 min" },
     ]
   },
   {
