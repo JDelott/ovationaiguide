@@ -1,40 +1,40 @@
 import React from 'react';
 
-export default function FeatureGuideSection() {
+export default function RoutingGuideSection() {
   return (
     <section className="py-16 sm:py-24 lg:py-32 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto space-y-8 sm:space-y-12">
-          {/* Prompt Engineering Fundamentals */}
+          {/* Getting Started */}
           <div className="relative bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 border border-white/10">
-            <h3 className="text-lg sm:text-xl text-white mb-3 sm:mb-4">Prompt Engineering Fundamentals</h3>
+            <h3 className="text-lg sm:text-xl text-white mb-3 sm:mb-4">Creating Your First Page</h3>
             <div className="space-y-4 sm:space-y-6">
               <p className="text-sm sm:text-base text-gray-400">
-                When requesting new features from Cursor AI, structure your prompts using this framework:
+                Follow these steps to create a new page in Next.js:
               </p>
               <ul className="space-y-2 sm:space-y-3">
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">1.</span>
                   <span className="text-sm sm:text-base text-gray-400">
-                    Context: Describe the current state and purpose of your application
+                    Navigate to <code className="text-blue-400">src/app/</code> in the file explorer
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">2.</span>
                   <span className="text-sm sm:text-base text-gray-400">
-                    Objective: Clearly state what you want to achieve
+                    Create a new folder for your route (e.g., <code className="text-blue-400">about/</code>)
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">3.</span>
                   <span className="text-sm sm:text-base text-gray-400">
-                    Requirements: List specific functionality needed
+                    Inside the folder, create <code className="text-blue-400">page.tsx</code>
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">4.</span>
                   <span className="text-sm sm:text-base text-gray-400">
-                    Constraints: Mention any technical or design limitations
+                    Press <code className="text-blue-400">Cmd/Ctrl + L</code> to open chat
                   </span>
                 </li>
               </ul>
@@ -43,50 +43,78 @@ export default function FeatureGuideSection() {
 
           {/* Example Prompts */}
           <div className="relative bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 border border-white/10">
-            <h3 className="text-lg sm:text-xl text-white mb-3 sm:mb-4">Example Prompts</h3>
+            <h3 className="text-lg sm:text-xl text-white mb-3 sm:mb-4">Example Page Prompts</h3>
             <div className="space-y-4 sm:space-y-6">
               <div>
-                <h4 className="text-sm sm:text-base text-blue-400 mb-2">Landing Page Feature</h4>
+                <h4 className="text-sm sm:text-base text-blue-400 mb-2">Simple About Page</h4>
                 <div className="bg-black/30 p-3 sm:p-4 rounded-lg text-xs sm:text-sm text-gray-300">
-                  &ldquo;Context:
-                  Building a SaaS product landing page that needs to convert visitors.
-
-                  Objective:
-                  Create a hero section that captures attention and drives sign-ups.
-
-                  Requirements:
-                  - Headline and subheadline highlighting key benefits
-                  - Email capture form with validation
-                  - Social proof indicators (user count, testimonials)
-                  - Responsive design for all devices
-                  
-                  Constraints:
-                  - Must match our blue/white color scheme
-                  - Should load quickly and be accessible
-                  - Need to integrate with existing navigation&rdquo;
+                  &ldquo;Create an about page with:
+                  - A header section with title and subtitle
+                  - Team member grid with images and bios
+                  - Company mission statement section
+                  - Contact information
+                  - Use Tailwind CSS for styling
+                  - Make it responsive for mobile&rdquo;
                 </div>
               </div>
-              
+
               <div>
-                <h4 className="text-sm sm:text-base text-blue-400 mb-2">Authentication Feature</h4>
+                <h4 className="text-sm sm:text-base text-blue-400 mb-2">Dynamic Blog Post Page</h4>
                 <div className="bg-black/30 p-3 sm:p-4 rounded-lg text-xs sm:text-sm text-gray-300">
-                  &ldquo;Context:
-                  Need to add user authentication to our Next.js application.
-
-                  Objective:
-                  Implement secure login/signup flow with social providers.
-
-                  Requirements:
-                  - Email/password authentication
-                  - Google and GitHub OAuth options
-                  - Password reset functionality
-                  - Remember me option
-                  
-                  Constraints:
-                  - Must use NextAuth.js
-                  - Need proper error handling
-                  - Should follow accessibility guidelines&rdquo;
+                  &ldquo;Create a dynamic blog post page at [slug]/page.tsx with:
+                  - Dynamic route parameter for post slug
+                  - Markdown content rendering
+                  - Author info and publish date
+                  - Share buttons
+                  - Next/previous post navigation
+                  - Related posts section&rdquo;
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Route Types */}
+          <div className="relative bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 border border-white/10">
+            <h3 className="text-lg sm:text-xl text-white mb-3 sm:mb-4">Common Route Types</h3>
+            <div className="space-y-4 sm:space-y-6">
+              <ul className="space-y-2 sm:space-y-3">
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">1.</span>
+                  <span className="text-sm sm:text-base text-gray-400">
+                    Static Route: <code className="text-blue-400">about/page.tsx</code> → <code className="text-blue-400">/about</code>
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">2.</span>
+                  <span className="text-sm sm:text-base text-gray-400">
+                    Dynamic Route: <code className="text-blue-400">blog/[slug]/page.tsx</code> → <code className="text-blue-400">/blog/post-1</code>
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-400 mr-2">3.</span>
+                  <span className="text-sm sm:text-base text-gray-400">
+                    Catch-all Route: <code className="text-blue-400">docs/[...slug]/page.tsx</code> → <code className="text-blue-400">/docs/any/path</code>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Layout and Templates */}
+          <div className="relative bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 border border-white/10">
+            <h3 className="text-lg sm:text-xl text-white mb-3 sm:mb-4">Creating Layouts</h3>
+            <div className="space-y-4 sm:space-y-6">
+              <p className="text-sm sm:text-base text-gray-400">
+                Try this prompt to create a layout:
+              </p>
+              <div className="bg-black/30 p-3 sm:p-4 rounded-lg text-xs sm:text-sm text-gray-300">
+                &ldquo;Create a layout.tsx file with:
+                - Navigation header with logo and menu
+                - Sidebar for documentation pages
+                - Footer with site links
+                - Dark mode support
+                - Responsive design for mobile
+                - Props typing for children&rdquo;
               </div>
             </div>
           </div>
@@ -99,61 +127,25 @@ export default function FeatureGuideSection() {
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">•</span>
                   <span className="text-sm sm:text-base text-gray-400">
-                    Start with high-level features, then drill down into specifics
+                    Keep page components focused on layout and data fetching
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">•</span>
                   <span className="text-sm sm:text-base text-gray-400">
-                    Break complex features into smaller, manageable chunks
+                    Use layouts for shared UI between routes
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">•</span>
                   <span className="text-sm sm:text-base text-gray-400">
-                    Use existing components as reference points for consistency
+                    Organize routes logically in the file system
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-400 mr-2">•</span>
                   <span className="text-sm sm:text-base text-gray-400">
-                    Consider edge cases and error states in your requirements
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Iterative Development */}
-          <div className="relative bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 border border-white/10">
-            <h3 className="text-lg sm:text-xl text-white mb-3 sm:mb-4">Iterative Development</h3>
-            <div className="space-y-3 sm:space-y-4">
-              <p className="text-sm sm:text-base text-gray-400">
-                After getting initial code, refine your feature through iterations:
-              </p>
-              <ul className="space-y-2 sm:space-y-3">
-                <li className="flex items-start">
-                  <span className="text-blue-400 mr-2">1.</span>
-                  <span className="text-sm sm:text-base text-gray-400">
-                    Review and test the generated code
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-400 mr-2">2.</span>
-                  <span className="text-sm sm:text-base text-gray-400">
-                    Ask for specific adjustments: &ldquo;Can we improve the form validation UX?&rdquo;
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-400 mr-2">3.</span>
-                  <span className="text-sm sm:text-base text-gray-400">
-                    Request optimizations: &ldquo;Let&apos;s add loading states and error handling&rdquo;
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-400 mr-2">4.</span>
-                  <span className="text-sm sm:text-base text-gray-400">
-                    Polish the implementation: &ldquo;Add animations and improve mobile responsiveness&rdquo;
+                    Consider loading and error states for each route
                   </span>
                 </li>
               </ul>
@@ -163,13 +155,13 @@ export default function FeatureGuideSection() {
           {/* Next Steps */}
           <div className="text-left sm:text-center">
             <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4">
-              Now that you understand how to request features, let&apos;s learn about building UI components.
+              Now that you can create pages and routes, let&apos;s learn about handling forms and API integration.
             </p>
             <a 
-              href="/guides/build/components"
+              href="/guides/build/forms-api"
               className="inline-flex items-center text-sm sm:text-base text-blue-400 hover:text-blue-300 transition-colors"
             >
-              Continue to Building UI Components
+              Continue to Forms & API Integration
               <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -179,4 +171,4 @@ export default function FeatureGuideSection() {
       </div>
     </section>
   );
-}
+} 
