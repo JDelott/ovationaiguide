@@ -10,6 +10,7 @@ const guides = [
       { title: "Development Prerequisites", slug: "installation", time: "10 min" },
       { title: "Installing Cursor AI", slug: "installation/cursor", time: "5 min" },
       { title: "Project Setup", slug: "installation/project-setup", time: "10 min" },
+      { title: "First Development Steps", slug: "development/first-steps", time: "15 min" }
     ]
   },
   {
