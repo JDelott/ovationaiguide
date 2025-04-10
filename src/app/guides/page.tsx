@@ -28,7 +28,7 @@ const guides = [
     description: "Master the art of debugging with Cursor AI's intelligent assistance.",
     number: "03",
     items: [
-      { title: "Error Resolution with Cursor", slug: "debug/basics", time: "20 min" }
+      { title: "Error Resolution with Cursor", slug: "debug/error-resolution", time: "20 min" }
     ]
   },
   {
