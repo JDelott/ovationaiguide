@@ -14,11 +14,10 @@ const guides = [
     ]
   },
   {
-    category: "Iterate/Build",
-    description: "Learn how to effectively use AI to build and expand your application.",
+    category: "Build",
+    description: "Learn how to build applications using Cursor AI's intelligent features.",
     number: "02",
     items: [
-      { title: "Adding Features with AI", slug: "build/features", time: "20 min" },
       { title: "Building UI Components", slug: "build/components", time: "15 min" },
       { title: "Creating Pages & Routes", slug: "build/routing", time: "15 min" },
       { title: "Forms & API Integration", slug: "build/forms-api", time: "25 min" }
@@ -29,20 +28,18 @@ const guides = [
     description: "Master the art of debugging with Cursor AI's intelligent assistance.",
     number: "03",
     items: [
-      { title: "Error Resolution with Cursor", slug: "debug/basics", time: "20 min" },
-      { title: "Understanding Error Messages", slug: "debug/errors", time: "15 min" },
-      { title: "AI-Assisted Bug Fixing", slug: "debug/ai-fixes", time: "20 min" },
-      { title: "Debugging Workflow", slug: "debug/workflow", time: "15 min" }
+      { title: "Error Resolution with Cursor", slug: "debug/basics", time: "20 min" }
     ]
   },
   {
     category: "Version Control",
-    description: "Learn essential Git operations with Cursor AI's intelligent assistance.",
+    description: "Learn how to manage your code with Git and GitHub integration.",
     number: "04",
     items: [
-      { title: "Git Repository Setup", slug: "git/setup", time: "10 min" },
-      { title: "AI Commit Messages", slug: "git/commits", time: "15 min" },
-      { title: "GitHub Integration", slug: "git/github", time: "20 min" }
+      { title: "Git Basics", slug: "version-control/basics", time: "15 min" },
+      { title: "Committing Changes", slug: "version-control/commits", time: "10 min" },
+      { title: "Working with Branches", slug: "version-control/branches", time: "15 min" },
+      { title: "Pull Requests", slug: "version-control/pull-requests", time: "20 min" }
     ]
   }
 ];
